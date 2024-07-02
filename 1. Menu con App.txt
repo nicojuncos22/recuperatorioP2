@@ -1,0 +1,41 @@
+1. Menu con App
+Solo agrego el li:
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/empleados"> 
+              
+                Empleados
+              </NavLink>
+            </li>
+
+
+1. App con componentes
+Importo el componente principal y la ruta de este
+import { Empleados } from "./components/empleados/Empleados";
+  <Route path="/empleados" element={<Empleados />} />
+
+
+3. Cada componente con service
+	componente Empleado:
+	comentar lo referido a pagina
+
+	componente Registrar:
+	depende del back
+	
+	componente Listado:
+	corroborar que coincida con atributos del json y luego formato de dato
+
+	componente Buscar:
+	nada muy raro, ver service
+
+2. Service con config
+	Buscar:
+	verificar que coincida con el atributo del back o del json según el cual estoy buscando
+	
+	Grabar:
+	nada raro por aqui
+
+
+1. Config con api (con el back)
+Genero la variable de la url y la exporto
+const urlResourceEmpleados = urlServidor + "/api/empleados";
+    urlResourceEmpleados
